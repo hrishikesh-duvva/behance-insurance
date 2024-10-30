@@ -1,0 +1,13 @@
+.icon-money-back-guarantee::before {
+    content: url('https://img.icons8.com/?size=100&id=b8ngI09xEqvZ&format=png&color=00796b'); /* Replace with actual path */
+  }
+  .icon-claims::before {
+    content: url('https://img.icons8.com/?size=100&id=UL8OWwn77oUD&format=png&color=00796b');
+  }
+  .icon-insurance-policy::before {
+    content: url('https://img.icons8.com/?size=100&id=E8Sc7UDfyyZC&format=png&color=00796b');
+  }
+  .icon-payment-app::before {
+    content: url('https://img.icons8.com/?size=100&id=62775&format=png&color=00796b');
+  }
+  

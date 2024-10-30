@@ -1,0 +1,89 @@
+<nav class="flex items-center justify-between p-4 shadow-lg">
+    <div class="text-teal-700 font-bold text-2xl">Logo</div>
+  
+    <div class="relative hidden md:block">
+      <input
+        type="text"
+        placeholder="Search here..."
+        class="border-b-2 outline-none placeholder-gray-500 focus:border-teal-700"
+      />
+    </div>
+  
+    <div class="hidden lg:flex space-x-6 items-center">
+      <div class="group relative">
+        <a href="#" class="text-black hover:text-teal-700">Home</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg p-2 rounded-md mt-1">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 1</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 2</a>
+        </div>
+      </div>
+
+      <div class="group relative">
+        <a href="#" class="text-black hover:text-teal-700">Pages</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg p-2 rounded-md mt-1">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 1</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 2</a>
+        </div>
+      </div>
+  
+      <div class="group relative">
+        <a href="#" class="text-black hover:text-teal-700">Insurances</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg p-2 rounded-md mt-1">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 1</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 2</a>
+        </div>
+      </div>
+  
+      <div class="group relative">
+        <a href="#" class="text-black hover:text-teal-700">Blog</a>
+        <div class="absolute hidden group-hover:block bg-white shadow-lg p-2 rounded-md mt-1">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 1</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-200">Dropdown Item 2</a>
+        </div>
+      </div>
+
+      <a href="#" class="text-black">Contact Us</a>
+    </div>
+  
+    <div class="hidden lg:flex items-center space-x-4">
+      <div class="flex items-center space-x-1 text-black">
+        <span><img style="width: 25px;height: 25px;" src="https://img.icons8.com/?size=100&id=9659&format=png&color=12B886" alt=""></span>
+        <span>+ (111) 65 458 856</span>
+      </div>
+      <button class="bg-teal-700 text-white px-4 py-2 rounded-lg">Get A Quote</button>
+    </div>
+  
+    <div class="text-2xl cursor-pointer" (click)="toggleMenu()">
+      <img class="w-7 h-7" src="https://img.icons8.com/?size=100&id=8147&format=png&color=000000" alt="Menu">
+    </div>
+  </nav>
+  
+  <div
+    [ngClass]="{'hidden': !isMenuOpen, 'block': isMenuOpen}"
+    class="flex flex-col space-y-4 p-4 lg:hidden bg-white shadow-lg transition duration-200 ease-in-out"
+  >
+    <div class="relative">
+      <input
+        type="text"
+        placeholder="Search here..."
+        class="border-b-2 outline-none placeholder-gray-500 focus:border-teal-700"
+      />
+    </div>
+    
+    <div class="flex flex-col space-y-4">
+      <a href="#" class="text-black hover:text-teal-700">Home</a>
+      <a href="#" class="text-black hover:text-teal-700">Pages</a>
+      <a href="#" class="text-black hover:text-teal-700">Insurances</a>
+      <a href="#" class="text-black hover:text-teal-700">Blog</a>
+      <a href="#" class="text-black">Contact Us</a>
+    </div>
+    
+    <div class="flex flex-col items-start space-y-4">
+      <div class="flex items-center space-x-1 text-black">
+        <span><img style="width: 25px;height: 25px;" src="https://img.icons8.com/?size=100&id=9659&format=png&color=12B886" alt=""></span>
+        <span>+ (111) 65 458 856</span>
+      </div>
+      <button class="bg-teal-700 text-white px-4 py-2 rounded-lg">Get A Quote</button>
+    </div>
+  </div>
+  
